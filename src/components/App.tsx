@@ -6,7 +6,8 @@ import Calendar from './Calender.tsx';
 function App() {
   const currentDate = new Date();
   return (
-    <div className="App">
+    <Navbar></Navbar>
+    <div className="Calendar">
       <Calendar date={currentDate} />
     </div>
   );
