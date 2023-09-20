@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import React from 'react';
 import './App.css'
-import Calendar from './components/Calender.tsx';
+import Calendar from './Calender.tsx';
 
 function App() {
   const currentDate = new Date();
