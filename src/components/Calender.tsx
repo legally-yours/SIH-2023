@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Calender.css"
+import "../styles/Calender.css"
 interface CalendarProps {
   date: Date;
 }
@@ -23,8 +23,8 @@ const Calendar: React.FC<CalendarProps> = ({ date }) => {
 
   const extraText = (i : number) => {
     var text = "";
-    if (i == 10) {
-        text += "Sample link for 10th " + currentDate.toLocaleString('default', { month: 'long' });
+    if (i == currentDate.getMonth()) {
+        text += "Sample link for " + currentDate.getMonth() + " " + currentDate.toLocaleString('default', { month: 'long' });
     }
     return text;
   }
