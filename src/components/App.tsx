@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import InfoCard from "./InfoCard";
 import { Typography } from "@mui/material";
 import EmptyImage from "../assets/EmptyImage.png";
+import Calendar from './Calender.tsx';
 //import "./App.css";
 
 function App() {
@@ -14,8 +15,12 @@ function App() {
           Expert In Civilian And Financial Cases.
         </Typography>
       </InfoCard>
+      <div className="Calendar">
+      <Calendar date={currentDate} />
+    </div>
+
     </>
   );
 }
 
-export default App;
+export default App
