@@ -4,8 +4,10 @@ import InfoCard from './InfoCard.tsx';
 import EmptyImage from "../assets/EmptyImage.png";
 import { Typography } from '@mui/material';
 import '../styles/LawyerSearchPage.css';
+import Footer from './Footer.tsx';
+
 const LawyerSearchPage = () => {
-    const lawyers : [string, string, string][] = [["Name 1", EmptyImage, "Some stuff"], ["Name 2", EmptyImage, "Some other stuff"], ["Name 3", EmptyImage, "Some more stuff"], ["Name 4", EmptyImage, "Some weird stuff"], ["Name 5", EmptyImage, "Some crazy stuff"], ["Name 6", EmptyImage, "Some interesting stuff"]];
+    const lawyers : [string, string, string][] = [["Name 1", EmptyImage, "Some stuff"], ["Name 2", EmptyImage, "Some other stuff"], ["Name 3", EmptyImage, "Some more stuff"], ["Name 4", EmptyImage, "Some weird stuff"], ["Name 5", EmptyImage, "Some crazy stuff"], ["Name 6", EmptyImage, "Some interesting stuff"],["Name 1", EmptyImage, "Some stuff"], ["Name 2", EmptyImage, "Some other stuff"], ["Name 3", EmptyImage, "Some more stuff"], ["Name 4", EmptyImage, "Some weird stuff"], ["Name 5", EmptyImage, "Some crazy stuff"], ["Name 6", EmptyImage, "Some interesting stuff"]];
 
   return (
     <>
@@ -21,6 +23,7 @@ const LawyerSearchPage = () => {
     </div>
     ))}
     </div>
+    <Footer></Footer>
     </>
   )
 }
