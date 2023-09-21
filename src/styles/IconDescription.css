@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #ABD2FA;
+    padding: 1em;
 }
 
 .home-heading h1 {

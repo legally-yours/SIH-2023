@@ -1,0 +1,9 @@
+.homepage-description {
+    padding: 3em;
+    background-color: #A6C2FF;
+}
+
+.description-heading {
+    display: flex;
+    justify-content: center;
+}
