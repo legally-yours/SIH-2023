@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 // import EmptyImage from "../assets/EmptyImage.png";
 import HomePage from "./HomePage";
 
+
 function App() {
   const [current_page, setCurrentPage] = useState("initial_view");
 
@@ -37,6 +38,7 @@ function App() {
       <HomePage setCurrentPage={setCurrentPage}></HomePage>
     </>
   ); 
+
 }
 //import { useState } from "react";
 // import Navbar from "./Navbar";

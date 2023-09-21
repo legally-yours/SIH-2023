@@ -29,6 +29,7 @@ const LawyerSearchPage = ({setCurrentPage, current_page}: Props) => {
     {lawyers.map((data, index) => (
         <div className="tile">
         <InfoCard onClick={handleCardClick} key={"" + index} header={data[0]} image={data[1]}>
+
      <Typography key={"" + index} variant="body2" color="#0077B6">
      {data[2]}
    </Typography>

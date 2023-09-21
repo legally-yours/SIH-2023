@@ -12,6 +12,7 @@ const HomePage = ({setCurrentPage}: Props) => {
     return (
         <>
         <Navbar setCurrentPage={setCurrentPage}></Navbar>
+
         <IconDescription></IconDescription>
         <Description></Description>
         <Footer></Footer>
