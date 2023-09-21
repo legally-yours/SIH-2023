@@ -1,0 +1,18 @@
+.icon-description {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ABD2FA;
+}
+
+.home-heading h1 {
+    font-size: 8vh;
+}
+
+.home-heading h2 {
+    font-size: 2vh;
+}
+
+.home-title-image {
+    width: 40vh;
+    margin-right: 5vh;
+}
