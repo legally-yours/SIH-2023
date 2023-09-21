@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Avatar from "@mui/material/Avatar";
+// import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import EmptyImage from "../assets/EmptyImage.png";
 
@@ -70,6 +70,10 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
     setCurrentPage("initial_view");
   };
 
+  var cp = current_page;
+  var cpp = cp;
+  var cp = cpp;
+  
   return (
     <>
       <Box sx={{ display: "flex", ...CommonStyles }}>

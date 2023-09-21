@@ -32,17 +32,23 @@ export default function DrawerAppBar(props: Props) {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   const [showProfileInfo, setShowProfileInfo] = React.useState(false);
 
+  // Delete this later DONT FUCKING FORGET OR THINGS WILL BREAK VERY SOON AJGKLZRFDAZSVLGDZSFIUHKSFZXCHFSDF
+  // AJZFDKIJSFDIJSDF
+  if (isLoggedIn == true) {
+    setIsLoggedIn(true);
+  }
+
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
+  // const handleLogin = () => {
+  //   setIsLoggedIn(true);
+  // };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-  };
+  // const handleLogout = () => {
+  //   setIsLoggedIn(false);
+  // };
 
   const handleProfileHover = (isHovered: boolean) => {
     setShowProfileInfo(isHovered);
