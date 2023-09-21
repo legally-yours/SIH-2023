@@ -59,7 +59,8 @@ function App() {
 // import { Typography } from "@mui/material";
 // import EmptyImage from "../assets/EmptyImage.png";
 // import Calendar from './Calender.tsx';
-import LawyerSearchPage from "./LawyerSearchPage.tsx";
+// import LawyerSearchPage from "./LawyerSearchPage.tsx";
+import HomePage from "./HomePage.tsx";
 //import "./App.css";
 
 function App() {
@@ -78,7 +79,7 @@ function App() {
 
   //   </>
   // );
-  return <LawyerSearchPage></LawyerSearchPage>
+  return <HomePage></HomePage>
 }
 
 export default App
