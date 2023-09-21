@@ -3,8 +3,8 @@ import Navbar from './Navbar.tsx';
 import InfoCard from './InfoCard.tsx';
 import EmptyImage from "../assets/EmptyImage.png";
 import { Typography } from '@mui/material';
-import '../styles/Homepage.css';
-const HomePage = () => {
+import '../styles/LawyerSearchPage.css';
+const LawyerSearchPage = () => {
     const lawyers : [string, string, string][] = [["Name 1", EmptyImage, "Some stuff"], ["Name 2", EmptyImage, "Some other stuff"], ["Name 3", EmptyImage, "Some more stuff"], ["Name 4", EmptyImage, "Some weird stuff"], ["Name 5", EmptyImage, "Some crazy stuff"], ["Name 6", EmptyImage, "Some interesting stuff"]];
 
   return (
@@ -25,4 +25,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage;
+export default LawyerSearchPage;

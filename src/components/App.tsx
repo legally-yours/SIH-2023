@@ -4,7 +4,7 @@ import InfoCard from "./InfoCard";
 import { Typography } from "@mui/material";
 import EmptyImage from "../assets/EmptyImage.png";
 import Calendar from './Calender.tsx';
-import HomePage from "./HomePage.tsx";
+import LawyerSearchPage from "./LawyerSearchPage.tsx";
 //import "./App.css";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
 
   //   </>
   // );
-  return <HomePage></HomePage>
+  return <LawyerSearchPage></LawyerSearchPage>
 }
 
 export default App
