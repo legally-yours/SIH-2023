@@ -1,25 +1,35 @@
-import * as React from "react";
+import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
+const handleCardClick = () => {
+  if (current_page === "detailed_view") {
+    setCurrentPage("initial_view");
+  } else {
+    setCurrentPage("detailed_view");
+  }
+};
+
 interface ActionAreaCardProps {
   image: string;
   header: React.ReactNode;
   children: React.ReactNode;
+  onClick: () => void; // Add onClick to the props
 }
 
 const ActionAreaCard: React.FC<ActionAreaCardProps> = ({
   image,
   header,
   children,
+  onClick,
 }) => {
   const cardStyles = {
     maxWidth: 345,
-    backgroundColor: "#DBF5FA", // Change the background color here
-    color: "#03045E", // Change the foreground color here
+    backgroundColor: "#DBF5FA",
+    color: "#03045E",
     border: "2px solid #CAF0F8",
     textAlign: "center",
     margin: "auto",
@@ -27,12 +37,13 @@ const ActionAreaCard: React.FC<ActionAreaCardProps> = ({
 
   return (
     <Card sx={cardStyles}>
-      <CardActionArea>
+      <CardActionArea onClick={onClick}>
         <CardMedia
           component="img"
           height="140"
           image={image}
           alt="Card Image"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
         <CardContent>
           {header && (
