@@ -75,7 +75,7 @@ export default function DrawerAppBar(props: Props) {
   const handleNavigate = (page: string) => {
     setCurrentPage(page);
     console.log(page);
-    setMobileOpen(false); // Close the drawer on mobile after navigation
+    setMobileOpen(false);
   };
 
   return (

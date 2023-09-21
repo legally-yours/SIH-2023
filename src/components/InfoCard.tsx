@@ -5,19 +5,11 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
-const handleCardClick = () => {
-  if (current_page === "detailed_view") {
-    setCurrentPage("initial_view");
-  } else {
-    setCurrentPage("detailed_view");
-  }
-};
-
 interface ActionAreaCardProps {
   image: string;
   header: React.ReactNode;
   children: React.ReactNode;
-  onClick: () => void; // Add onClick to the props
+  onClick: () => void;
 }
 
 const ActionAreaCard: React.FC<ActionAreaCardProps> = ({
