@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+# Legally Yours
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Empowering Legal Services in India through an Incentivized eMarketplace for Legal Professionals
 
-Currently, two official plugins are available:
+Important links:
+[SIH github folder](https://drive.google.com/drive/folders/1gYK8WAna6XD1UZ1aMHXXJwiwadVydco8) \
+[Colour pallete](https://coolors.co/091540-7692ff-abd2fa-3d518c-1b2cc1) \
+[Pages link](https://legally-yours.github.io/SIH-2023/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Completed elements:
+Navbar
+Calendar
 
-## Expanding the ESLint configuration
+Problem statement:
+Incentives based Design for onboarding Legal Service Providers such as Advocates, Arbitrators, Mediators, Notaries, Document Writers, etc on eMarket Place for extending Legal Services to Citizens in India
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Detailed explaination:
+In India, the legal service sector is largely unorganized, making it difficult for people to access legal services. Many legal service providers, such as advocates, arbitrators, mediators, notaries, and document writers, operate independently and do not have a centralized platform to offer their services to clients. This leads to a lack of transparency, difficulty in finding the right legal service provider, and high costs for clients. Objective: The objective of this hackathon is to develop an incentivized design to onboard legal service providers on an eMarketplace to extend legal services to citizens in India. Solution: Participants are expected to design a platform that can onboard legal service providers on an eMarketplace and incentivize them to offer their services to clients. The platform should be user-friendly, secure, and transparent, and should address the following challenges: 1. How to incentivize legal service providers to offer their services on the platform? 2. How to ensure transparency and accountability in the services provided by legal service providers? 3. How to ensure the quality of legal services provided by the service providers? 4. How to ensure that clients can easily find the right legal service provider for their specific legal needs? 5. How to ensure that the platform is accessible to citizens from all socio-economic backgrounds? Participants can consider various models for incentivizing legal service providers, such as offering them bonuses, rewards, or other forms of recognition for their services. They can also consider gamification techniques to motivate providers to offer quality services and compete with each other on the platform. Additionally, they can explore ways to integrate the platform with other legal service providers and institutions, such as courts, legal aid clinics, and bar associations. Deliverables: The deliverables for this hackathon are a functional prototype of the e-marketplace platform, including wireframes, user stories, and a brief video demonstration of the platform's features and functionalities. The platform should be designed to address the needs of both legal service providers and clients and should offer a seamless user experience.
