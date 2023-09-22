@@ -20,14 +20,14 @@ import LogoBlack from "../assets/LogoBlack.png";
 import Rohan from "./Rohan";
 interface Props {
   window?: () => Window;
-  setCurrentPage: React.Dispatch<React.SetStateAction<string>>; // Add this prop
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const drawerWidth = 240;
 const navItems = ["Home", "Search", "Contact Us", "Sign in"];
 
 export default function DrawerAppBar(props: Props) {
-  const { window, setCurrentPage } = props; // Destructure setCurrentPage
+  const { window, setCurrentPage } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   const [showProfileInfo, setShowProfileInfo] = React.useState(false);
