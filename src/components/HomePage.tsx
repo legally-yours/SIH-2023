@@ -19,4 +19,5 @@ const HomePage = ({setCurrentPage} : Props) => {
       )
 }
 
+
 export default HomePage;
