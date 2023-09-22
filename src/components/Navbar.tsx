@@ -17,7 +17,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import LogoBlack from "../assets/LogoBlack.png";
-import Rohan from "./Rohan";
+import Rohan from "./TransalateButton";
 interface Props {
   window?: () => Window;
   setCurrentPage: React.Dispatch<React.SetStateAction<string>>;

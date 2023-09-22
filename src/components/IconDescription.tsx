@@ -1,4 +1,4 @@
-import logoblack from '../assets/logo-black.png';
+// import logoblack from '../assets/logo-black.png';
 import "../styles/IconDescription.css";
 
 const IconDescription = () => {
