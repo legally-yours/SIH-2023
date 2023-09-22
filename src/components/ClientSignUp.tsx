@@ -122,7 +122,7 @@ const ClientSignUp: React.FC = () => {
               />
               <Box sx={{ display: "flex", justifyContent: "right" }}>
                 <button className="submit" type="submit" onClick={handleSubmit}>
-                  Submit
+                  Sign Up
                 </button>
               </Box>
             </form>

@@ -60,7 +60,8 @@ function App() {
 // import EmptyImage from "../assets/EmptyImage.png";
 // import Calendar from './Calender.tsx';
 
-import ClientSignUp from "./ClientSignUp";
+//import ClientSignUp from "./ClientSignUp";
+import Login from "./Login";
 
 // import ContactUs from "./ContactUs.tsx";
 // import LawyerSearchPage from "./LawyerSearchPage.tsx";
@@ -83,7 +84,7 @@ function App() {
 
   //   </>
   // );
-  return <ClientSignUp></ClientSignUp>;
+  return <Login></Login>;
 }
 
 export default App;
