@@ -1,10 +1,14 @@
 .icon-description {
     display: flex;
     justify-content: space-between;
-    background-color: #84c8d6;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../assets/titlebg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #0E0E0E;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 1em;
-    /* margin: 100px 1em 1em 1em; */
-    /* border-radius: 2em; */
+    height: 60vh;
+    align-items: center;
 }
 
 .home-heading h1 {

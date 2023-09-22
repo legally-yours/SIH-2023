@@ -13,6 +13,9 @@ import LawyerDetails from "./LawyerDetails";
 import '../styles/App.css';
 import ContactUs from "./ContactUs";
 // import af from '../database/db_testing';
+import Login from './Login';
+import LawyerSignUp from "./LawyerSignUp";
+import ClientSignUp from "./ClientSignUp";
 
 function App() {
   const [current_page, setCurrentPage] = useState("home");
@@ -44,7 +47,7 @@ function App() {
       <>
         <Navbar setCurrentPage={setCurrentPage} />
         <div className="nav-fixer"></div>
-        <HomePage></HomePage>
+        <HomePage setCurrentPage={setCurrentPage}></HomePage>
         <Footer></Footer>
       </>
     );
@@ -76,9 +79,26 @@ function App() {
     <>
       <Navbar setCurrentPage={setCurrentPage} />
       <div className="nav-fixer"></div>
+      <Login></Login>
       <Footer></Footer>
 </>)
 
+  } else if (current_page == 'lawyer-signup') {
+    return (
+      <>
+        <Navbar setCurrentPage={setCurrentPage} />
+        <div className="nav-fixer"></div>
+        <LawyerSignUp></LawyerSignUp>
+        <Footer></Footer>
+  </>)
+  } else if (current_page == 'client-signup') {
+    return (
+      <>
+        <Navbar setCurrentPage={setCurrentPage} />
+        <div className="nav-fixer"></div>
+        <ClientSignUp></ClientSignUp>
+        <Footer></Footer>
+  </>)
   }
   else {
     return (
