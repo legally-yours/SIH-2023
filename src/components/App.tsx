@@ -10,7 +10,7 @@ import HomePage from "./HomePage";
 import Footer from "./Footer";
 import LawyerSearchPage from "./LawyerSearchPage";
 import LawyerDetails from "./LawyerDetails";
-import Rohan from "./Rohan";
+import Rohan from "./TransalateButton";
 
 function App() {
   const [current_page, setCurrentPage] = useState("home");

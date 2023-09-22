@@ -1,11 +1,12 @@
+
 import React, { useEffect } from 'react';
 
-const Rohan = () => {
+const TransalateButton = () => {
   useEffect(() => {
-    // Load the Google Translate API script
+   
     const script = document.createElement('script');
     script.src = '//translate.google.com/translate_a/element.js';
-    script.async = true;
+    script.async = true;    
 
     script.onload = () => {
       // Delay the execution of googleTranslateElementInit to ensure the 'google' object is available
@@ -14,13 +15,13 @@ const Rohan = () => {
           new window.google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
         }
         googleTranslateElementInit();
-      }, 1000); // Adjust the delay time if needed
+      }, 1000); 
     };
 
-    // Append the script to the document
+    
     document.head.appendChild(script);
 
-    // Clean up when the component unmounts
+    
     return () => {
       document.head.removeChild(script);
     };
@@ -31,4 +32,4 @@ const Rohan = () => {
   );
 }
 
-export default Rohan;
+export default TransalateButton;
