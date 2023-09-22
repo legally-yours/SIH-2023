@@ -2,7 +2,7 @@
 import IconDescription from './IconDescription.tsx';
 import Description from './Description.tsx';
 import SummaryShortcuts from './SummaryShortcuts.tsx';
-import Rohan from './Rohan.tsx';
+import Rohan from './TransalateButton.tsx';
 
 const HomePage = () => {
     return (
