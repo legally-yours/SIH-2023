@@ -119,7 +119,7 @@ const ContactUs = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center", marginBottom: "1em" }}>
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=1OJVHhWig42FoiXy6Tw5r00PkkzJrtmQ&ehbc=2E312F&noprof=1"
           width="82%"
