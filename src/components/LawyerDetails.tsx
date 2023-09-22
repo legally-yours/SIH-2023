@@ -3,7 +3,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import EmptyImage from "../assets/EmptyImage.png";
-import '../styles/LawyerDetails.css';
+import Calendar from "./Calender";
+
 interface BackButtonProps {
   onClick: () => void;
 }
@@ -36,6 +37,7 @@ interface LawyerDetailsProps {
   details: {
     name: string;
     contact: string;
+    probono: string;
     specialization: string;
     location: string;
     experience: string;
@@ -158,6 +160,13 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
           >
             Experience: {details.experience}
           </Typography>
+          <Typography
+            variant="body1"
+            sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
+          >
+            Pro Bono Cases Done: {details.probono}
+          </Typography>
+          <Button sx={{'background-color': '#FFDFDF'}}>Book Pro Bono Case</Button>
         </Box>
       </Box>
       <Box
@@ -167,6 +176,7 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
           flex: 1,
           backgroundColor: "#FFFFFF",
           marginTop: "12px",
+          marginBottom: "12px",
           borderTopRightRadius: "12px",
           borderBottomRightRadius: "12px",
         }}
@@ -190,6 +200,21 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
             <Typography variant="body1">{details.description}</Typography>
           </Box>
         </Box>
+      </Box>
+      <Box sx={{
+          ...CommonStyles,
+          display: 'flex',
+          p: 2,
+          flex: 1,
+          backgroundColor: "#FFFFFF",
+          marginTop: "12px",
+          marginBottom: "12px",
+          borderTopRightRadius: "12px",
+          borderBottomRightRadius: "12px",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+        <Calendar date={new Date()}></Calendar>
       </Box>
     </>
   );

@@ -10,7 +10,8 @@ import HomePage from "./HomePage";
 import Footer from "./Footer";
 import LawyerSearchPage from "./LawyerSearchPage";
 import LawyerDetails from "./LawyerDetails";
-// import Rohan from "./TransalateButton";
+import '../styles/App.css';
+import ContactUs from "./ContactUs";
 
 function App() {
   const [current_page, setCurrentPage] = useState("home");
@@ -28,6 +29,7 @@ function App() {
   const lawyerInfo = {
     name: "Rohit Sinha",
     contact: "+91 935-395-8508",
+    probono: "10",
     specialization: "Criminal Defense",
     location: "Banagalore, Karnataka",
     experience: "10+ Years",
@@ -40,6 +42,7 @@ function App() {
     return (
       <>
         <Navbar setCurrentPage={setCurrentPage} />
+        <div className="nav-fixer"></div>
         <HomePage></HomePage>
         <Footer></Footer>
       </>
@@ -48,17 +51,27 @@ function App() {
     return (
       <>
         <Navbar setCurrentPage={setCurrentPage} />
+        <div className="nav-fixer"></div>
         <LawyerSearchPage setCurrentPage={setCurrentPage} current_page={current_page}></LawyerSearchPage>
         <Footer></Footer>
       </>
     );
   } else if (current_page == 'detailed_view') {
-    return <>
+    return (<>
       <Navbar setCurrentPage={setCurrentPage} />
+      <div className="nav-fixer"></div>
       <LawyerDetails current_page={current_page} setCurrentPage={setCurrentPage} details={lawyerInfo}></LawyerDetails>
       <Footer></Footer>
-    </>
-  } else {
+    </>)
+  } else if (current_page == 'contact us') {
+    return (<>
+      <Navbar setCurrentPage={setCurrentPage} />
+      <div className="nav-fixer"></div>
+      <ContactUs></ContactUs>
+      <Footer></Footer>
+    </>)
+  } 
+  else {
     return (
       <>
       <Navbar setCurrentPage={setCurrentPage}></Navbar>
