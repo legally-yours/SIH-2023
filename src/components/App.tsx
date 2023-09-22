@@ -4,7 +4,8 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import InfoCard from "./InfoCard";
 import LawyerDetails from "./LawyerDetails";
-import Rohan from "./Rohan";
+import { Typography } from "@mui/material";
+import EmptyImage from "../assets/EmptyImage.png";
 
 function App() {
   const [current_page, setCurrentPage] = useState("initial_view");
@@ -28,39 +29,30 @@ function App() {
     description:
       "A Criminal Defense Attorney is a legal professional with specialized expertise in defending individuals or entities accused of criminal activities. These dedicated advocates play a crucial role in upholding the principles of justice, ensuring fair trials, and safeguarding the rights of their clients within the criminal justice system.",
   };
-  if (current_page == 'home') {
-    return (
-      <>
-        <Navbar setCurrentPage={setCurrentPage} />
-        <HomePage></HomePage>
-        <Footer></Footer>
-      </>
-    );
-  } else if (current_page == 'search') {
-    return (
-      <>
-        <Navbar setCurrentPage={setCurrentPage} />
-        <LawyerSearchPage setCurrentPage={setCurrentPage} current_page={current_page}></LawyerSearchPage>
-        <Footer></Footer>
-      </>
-    );
-  } else if (current_page == 'detailed_view') {
-    return <>
-      <Navbar setCurrentPage={setCurrentPage} />
-      <LawyerDetails current_page={current_page} setCurrentPage={setCurrentPage} details={lawyerInfo}></LawyerDetails>
-    </>
-  } else {
-    return (
-      <>
-      <Navbar setCurrentPage={setCurrentPage}></Navbar>
-      <h1>{current_page}</h1>
-      </>
-    )
-  }
-  
- 
 
-}
+  return (
+    <>
+      <Navbar setCurrentPage={setCurrentPage} />
+      {current_page === "initial_view" ? (
+        <InfoCard
+          header="Rohit Sinha"
+          image={EmptyImage}
+          onClick={handleCardClick}
+        >
+          <Typography variant="body2" color="#0077B6">
+            Expert In Civilian And Financial Cases.
+          </Typography>
+        </InfoCard>
+      ) : (
+        <LawyerDetails
+          current_page={current_page}
+          setCurrentPage={setCurrentPage}
+          details={lawyerInfo}
+        />
+      )}
+    </>
+  ); 
+*/
 //import { useState } from "react";
 // import Navbar from "./Navbar";
 // import InfoCard from "./InfoCard";
@@ -68,8 +60,7 @@ function App() {
 // import EmptyImage from "../assets/EmptyImage.png";
 // import Calendar from './Calender.tsx';
 import ContactUs from "./ContactUs.tsx";
-// import LawyerSearchPage from "./LawyerSearchPage.tsx";
-// import HomePage from "./HomePage.tsx";
+//coimport LawyerSearchPage from "./LawyerSearchPage.tsx";
 //import "./App.css";
 
 function App() {
