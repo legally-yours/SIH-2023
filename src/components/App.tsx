@@ -10,7 +10,7 @@ import HomePage from "./HomePage";
 import Footer from "./Footer";
 import LawyerSearchPage from "./LawyerSearchPage";
 import LawyerDetails from "./LawyerDetails";
-import Rohan from "./TransalateButton";
+// import Rohan from "./TransalateButton";
 
 function App() {
   const [current_page, setCurrentPage] = useState("home");
@@ -77,7 +77,7 @@ function App() {
 // import { Typography } from "@mui/material";
 // import EmptyImage from "../assets/EmptyImage.png";
 // import Calendar from './Calender.tsx';
-import ContactUs from "./ContactUs.tsx";
+// import ContactUs from "./ContactUs.tsx";
 // import LawyerSearchPage from "./LawyerSearchPage.tsx";
 // import HomePage from "./HomePage.tsx";
 //import "./App.css";
