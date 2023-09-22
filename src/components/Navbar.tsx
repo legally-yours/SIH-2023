@@ -20,7 +20,7 @@ import LogoWhite from "../assets/LogoWhite.png";
 
 interface Props {
   window?: () => Window;
-  setCurrentPage: React.Dispatch<React.SetStateAction<string>>; // Add this prop
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const drawerWidth = 240;
@@ -172,7 +172,7 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box component="main" sx={{ p: 0 }}>
         <Toolbar />
       </Box>
     </Box>

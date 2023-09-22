@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 // import { Typography } from "@mui/material";
 // import EmptyImage from "../assets/EmptyImage.png";
 import HomePage from "./HomePage";
-
+import OnboardPanel from "./OnboardPanel";
 
 function App() {
   const [current_page, setCurrentPage] = useState("initial_view");
@@ -35,10 +35,9 @@ function App() {
   return (
     <>
       <Navbar setCurrentPage={setCurrentPage} />
-      <HomePage setCurrentPage={setCurrentPage}></HomePage>
+      <OnboardPanel></OnboardPanel>
     </>
-  ); 
-
+  );
 }
 //import { useState } from "react";
 // import Navbar from "./Navbar";

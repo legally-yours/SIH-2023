@@ -1,35 +1,8 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
+import ButtonComp from "../components/ButtonComp";
 import EmptyImage from "../assets/EmptyImage.png";
-
-interface BackButtonProps {
-  onClick: () => void;
-}
-
-const BackButton: React.FC<BackButtonProps> = ({ onClick }) => (
-  <Button
-    variant="outlined"
-    color="primary"
-    size="small"
-    sx={{
-      position: "absolute",
-      top: "8px",
-      right: "8px",
-      color: "#023E8A",
-      borderColor: "#023E8A",
-      "&:hover": {
-        backgroundColor: "#023E8A",
-        color: "#FFFFFF",
-      },
-    }}
-    onClick={onClick}
-  >
-    Back
-  </Button>
-);
 
 interface LawyerDetailsProps {
   current_page: string;
@@ -73,7 +46,7 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
   return (
     <>
       <Box sx={{ display: "flex", ...CommonStyles }}>
-        <BackButton onClick={handleBackClick} />
+        <ButtonComp onClick={handleBackClick} buttonText="Back" />
 
         <Box
           sx={{
