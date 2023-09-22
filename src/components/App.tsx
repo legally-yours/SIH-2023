@@ -59,7 +59,8 @@ function App() {
 // import { Typography } from "@mui/material";
 // import EmptyImage from "../assets/EmptyImage.png";
 // import Calendar from './Calender.tsx';
-import ContactUs from "./ContactUs.tsx";
+//import ContactUs from "./ContactUs.tsx";
+import LawyerSignUp from "./LawyerSignUp.tsx";
 //import LawyerSearchPage from "./LawyerSearchPage.tsx";
 //import "./App.css";
 
@@ -79,7 +80,7 @@ function App() {
 
   //   </>
   // );
-  return <ContactUs></ContactUs>;
+  return <LawyerSignUp></LawyerSignUp>;
 }
 
 export default App;
