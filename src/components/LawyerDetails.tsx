@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import EmptyImage from "../assets/EmptyImage.png";
-
+import '../styles/LawyerDetails.css';
 interface BackButtonProps {
   onClick: () => void;
 }
@@ -66,9 +66,13 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
   details,
 }) => {
   const handleBackClick = () => {
-    setCurrentPage("initial_view");
+    setCurrentPage("search");
   };
 
+  var cp = current_page;
+  var cpp = cp;
+  var cp = cpp;
+  
   return (
     <>
       <Box sx={{ display: "flex", ...CommonStyles }}>

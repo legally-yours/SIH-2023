@@ -1,22 +1,29 @@
 // App.tsx
-/*
+
 import { useState } from "react";
 import Navbar from "./Navbar";
-import InfoCard from "./InfoCard";
+// import InfoCard from "./InfoCard";
+// import LawyerDetails from "./LawyerDetails";
+// import { Typography } from "@mui/material";
+// import EmptyImage from "../assets/EmptyImage.png";
+import HomePage from "./HomePage";
+import Footer from "./Footer";
+import LawyerSearchPage from "./LawyerSearchPage";
 import LawyerDetails from "./LawyerDetails";
-import { Typography } from "@mui/material";
-import EmptyImage from "../assets/EmptyImage.png";
+// import Rohan from "./TransalateButton";
 
 function App() {
-  const [current_page, setCurrentPage] = useState("initial_view");
-
-  const handleCardClick = () => {
-    if (current_page === "detailed_view") {
-      setCurrentPage("initial_view");
-    } else {
-      setCurrentPage("detailed_view");
-    }
-  };
+  const [current_page, setCurrentPage] = useState("home");
+  var cp = current_page;
+  var cpp = cp;
+  var cp = cpp;
+  // const handleCardClick = () => {
+  //   if (current_page === "detailed_view") {
+  //     setCurrentPage("initial_view");
+  //   } else {
+  //     setCurrentPage("detailed_view");
+  //   }
+  // };
 
   const lawyerInfo = {
     name: "Rohit Sinha",
@@ -29,58 +36,57 @@ function App() {
     description:
       "A Criminal Defense Attorney is a legal professional with specialized expertise in defending individuals or entities accused of criminal activities. These dedicated advocates play a crucial role in upholding the principles of justice, ensuring fair trials, and safeguarding the rights of their clients within the criminal justice system.",
   };
-
-  return (
-    <>
+  if (current_page == 'home') {
+    return (
+      <>
+        <Navbar setCurrentPage={setCurrentPage} />
+        <HomePage></HomePage>
+        <Footer></Footer>
+      </>
+    );
+  } else if (current_page == 'search') {
+    return (
+      <>
+        <Navbar setCurrentPage={setCurrentPage} />
+        <LawyerSearchPage setCurrentPage={setCurrentPage} current_page={current_page}></LawyerSearchPage>
+        <Footer></Footer>
+      </>
+    );
+  } else if (current_page == 'detailed_view') {
+    return <>
       <Navbar setCurrentPage={setCurrentPage} />
-      {current_page === "initial_view" ? (
-        <InfoCard
-          header="Rohit Sinha"
-          image={EmptyImage}
-          onClick={handleCardClick}
-        >
-          <Typography variant="body2" color="#0077B6">
-            Expert In Civilian And Financial Cases.
-          </Typography>
-        </InfoCard>
-      ) : (
-        <LawyerDetails
-          current_page={current_page}
-          setCurrentPage={setCurrentPage}
-          details={lawyerInfo}
-        />
-      )}
+      <LawyerDetails current_page={current_page} setCurrentPage={setCurrentPage} details={lawyerInfo}></LawyerDetails>
+      <Footer></Footer>
     </>
-  ); 
-*/
+  } else {
+    return (
+      <>
+      <Navbar setCurrentPage={setCurrentPage}></Navbar>
+      <h1>{current_page}</h1>
+      <Footer></Footer>
+      </>
+    )
+  }
+  
+ 
+
+}
 //import { useState } from "react";
 // import Navbar from "./Navbar";
 // import InfoCard from "./InfoCard";
 // import { Typography } from "@mui/material";
 // import EmptyImage from "../assets/EmptyImage.png";
 // import Calendar from './Calender.tsx';
-//import ContactUs from "./ContactUs.tsx";
-import LawyerSignUp from "./LawyerSignUp.tsx";
-//import LawyerSearchPage from "./LawyerSearchPage.tsx";
+
+// import ContactUs from "./ContactUs.tsx";
+// import LawyerSearchPage from "./LawyerSearchPage.tsx";
+// import HomePage from "./HomePage.tsx";
 //import "./App.css";
 
-function App() {
-  // const currentDate = new Date();
-  // return (
-  //   <>
-  //     <Navbar></Navbar>
-  //     <InfoCard header="Rohit Sinha" image={EmptyImage}>
-  //       <Typography variant="body2" color="#0077B6">
-  //         Expert In Civilian And Financial Cases.
-  //       </Typography>
-  //     </InfoCard>
-  //     <div className="Calendar">
-  //     <Calendar date={currentDate} />
-  //   </div>
+// function App() {
 
-  //   </>
-  // );
-  return <LawyerSignUp></LawyerSignUp>;
-}
+
+//   return <HomePage></HomePage>
+// }
 
 export default App;

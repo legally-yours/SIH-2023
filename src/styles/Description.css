@@ -1,0 +1,11 @@
+.homepage-description {
+    padding: 3em;
+    background-color: #ADE8F4;
+    border-radius: 2em;
+    margin: 1em;
+}
+
+.description-heading {
+    display: flex;
+    justify-content: center;
+}
