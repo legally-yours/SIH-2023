@@ -12,6 +12,7 @@ import LawyerSearchPage from "./LawyerSearchPage";
 import LawyerDetails from "./LawyerDetails";
 import '../styles/App.css';
 import ContactUs from "./ContactUs";
+// import af from '../database/db_testing';
 
 function App() {
   const [current_page, setCurrentPage] = useState("home");
@@ -70,11 +71,20 @@ function App() {
       <ContactUs></ContactUs>
       <Footer></Footer>
     </>)
-  } 
+  } else if (current_page == 'sign in') {
+    return (
+    <>
+      <Navbar setCurrentPage={setCurrentPage} />
+      <div className="nav-fixer"></div>
+      <Footer></Footer>
+</>)
+
+  }
   else {
     return (
       <>
       <Navbar setCurrentPage={setCurrentPage}></Navbar>
+      <div className="nav-fixer"></div>
       <h1>{current_page}</h1>
       <Footer></Footer>
       </>
