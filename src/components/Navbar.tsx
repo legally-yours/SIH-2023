@@ -16,15 +16,15 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
-import LogoWhite from "../assets/LogoWhite.png";
-
+import LogoBlack from "../assets/LogoBlack.png";
+import Rohan from "./Rohan";
 interface Props {
   window?: () => Window;
   setCurrentPage: React.Dispatch<React.SetStateAction<string>>; // Add this prop
 }
 
 const drawerWidth = 240;
-const navItems = ["Dashboard", "Search", "Contact Us", "Sign in"];
+const navItems = ["Home", "Search", "Contact Us", "Sign in"];
 
 export default function DrawerAppBar(props: Props) {
   const { window, setCurrentPage } = props; // Destructure setCurrentPage
@@ -87,7 +87,7 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: "#023E8A" }}>
+      <AppBar component="nav" sx={{ backgroundColor: "#FFFFFF" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -104,22 +104,23 @@ export default function DrawerAppBar(props: Props) {
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
             <img
-              src={LogoWhite}
+              src={LogoBlack}
               alt="Logo"
               style={{ height: "85px", padding: "8px 0" }}
             />
           </Typography>
+          <Rohan></Rohan>
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
               <Button
                 key={item}
                 sx={{
                   position: "relative",
-                  color: "#fff",
-                  backgroundColor: "#023E8A",
-                  fontSize: "1.0rem",
+                  color: "#000000",
+                  backgroundColor: "#FFFFFF",
+                  fontSize: "1.2em",
                   "&:hover": {
-                    backgroundColor: "#03045E",
+                    backgroundColor: "#DDDDDD",
                   },
                 }}
                 onClick={() => handleNavigate(item.toLowerCase())}
@@ -178,9 +179,9 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
+      {/* <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-      </Box>
+      </Box> */}
     </Box>
   );
 }

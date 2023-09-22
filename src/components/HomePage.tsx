@@ -1,21 +1,15 @@
 // import React from 'react'
-import Navbar from './Navbar.tsx';
-import Footer from './Footer.tsx';
 import IconDescription from './IconDescription.tsx';
 import Description from './Description.tsx';
+import SummaryShortcuts from './SummaryShortcuts.tsx';
+import Rohan from './Rohan.tsx';
 
-interface Props {
-    setCurrentPage: React.Dispatch<React.SetStateAction<string>>; // Add this prop
-}
-
-const HomePage = ({setCurrentPage}: Props) => {
+const HomePage = () => {
     return (
         <>
-        <Navbar setCurrentPage={setCurrentPage}></Navbar>
-
-        <IconDescription></IconDescription>
+<IconDescription></IconDescription>
+        <SummaryShortcuts />
         <Description></Description>
-        <Footer></Footer>
         </>
       )
 }

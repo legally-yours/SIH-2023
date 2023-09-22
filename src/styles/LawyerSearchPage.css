@@ -2,10 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 95px;
 }
 
 .tile {
-    /* flex-basis: 33%; */
     min-width: 15em;
     width: 25%;
     padding: 0.5em;

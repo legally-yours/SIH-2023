@@ -67,7 +67,7 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
   details,
 }) => {
   const handleBackClick = () => {
-    setCurrentPage("initial_view");
+    setCurrentPage("search");
   };
 
   var cp = current_page;

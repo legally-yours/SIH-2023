@@ -8,7 +8,7 @@ const IconDescription = () => {
     <h1>LegallyYours</h1>
     <h2>Empowering Legal Services in India through an Incentivized eMarketplace for Legal Professionals</h2>
     </div>
-    <img className="home-title-image" src={logoblack}></img>
+    {/* <img className="home-title-image" src={logoblack}></img> */}
     </div>
   )
 }
