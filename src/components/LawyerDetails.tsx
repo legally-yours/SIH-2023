@@ -1,7 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+<<<<<<< HEAD
 import ButtonComp from "../components/ButtonComp";
+=======
+import Button from "@mui/material/Button";
+>>>>>>> b4d33729a85bb6c40d20de6d97e6ecaa07762b98
 import EmptyImage from "../assets/EmptyImage.png";
 
 interface LawyerDetailsProps {
@@ -40,9 +44,13 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
   details,
 }) => {
   const handleBackClick = () => {
-    setCurrentPage("initial_view");
+    setCurrentPage("search");
   };
 
+  var cp = current_page;
+  var cpp = cp;
+  var cp = cpp;
+  
   return (
     <>
       <Box sx={{ display: "flex", ...CommonStyles }}>

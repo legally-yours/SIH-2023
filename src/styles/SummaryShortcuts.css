@@ -1,0 +1,11 @@
+.summary-shortcuts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary {
+    max-width: 50vw;
+    padding: 2em;
+    justify-content: center;
+    align-self: center;
+}

@@ -1,13 +1,11 @@
 // App.tsx
-
+/*
 import { useState } from "react";
 import Navbar from "./Navbar";
-// import InfoCard from "./InfoCard";
-// import LawyerDetails from "./LawyerDetails";
-// import { Typography } from "@mui/material";
-// import EmptyImage from "../assets/EmptyImage.png";
-import HomePage from "./HomePage";
-import OnboardPanel from "./OnboardPanel";
+import InfoCard from "./InfoCard";
+import LawyerDetails from "./LawyerDetails";
+import { Typography } from "@mui/material";
+import EmptyImage from "../assets/EmptyImage.png";
 
 function App() {
   const [current_page, setCurrentPage] = useState("initial_view");
@@ -35,23 +33,53 @@ function App() {
   return (
     <>
       <Navbar setCurrentPage={setCurrentPage} />
-      <OnboardPanel></OnboardPanel>
+      {current_page === "initial_view" ? (
+        <InfoCard
+          header="Rohit Sinha"
+          image={EmptyImage}
+          onClick={handleCardClick}
+        >
+          <Typography variant="body2" color="#0077B6">
+            Expert In Civilian And Financial Cases.
+          </Typography>
+        </InfoCard>
+      ) : (
+        <LawyerDetails
+          current_page={current_page}
+          setCurrentPage={setCurrentPage}
+          details={lawyerInfo}
+        />
+      )}
     </>
-  );
-}
+  ); 
+*/
 //import { useState } from "react";
 // import Navbar from "./Navbar";
 // import InfoCard from "./InfoCard";
 // import { Typography } from "@mui/material";
 // import EmptyImage from "../assets/EmptyImage.png";
 // import Calendar from './Calender.tsx';
-// import LawyerSearchPage from "./LawyerSearchPage.tsx";
-// import HomePage from "./HomePage.tsx";
+import ContactUs from "./ContactUs.tsx";
+//coimport LawyerSearchPage from "./LawyerSearchPage.tsx";
 //import "./App.css";
 
-// function App() {
+function App() {
+  // const currentDate = new Date();
+  // return (
+  //   <>
+  //     <Navbar></Navbar>
+  //     <InfoCard header="Rohit Sinha" image={EmptyImage}>
+  //       <Typography variant="body2" color="#0077B6">
+  //         Expert In Civilian And Financial Cases.
+  //       </Typography>
+  //     </InfoCard>
+  //     <div className="Calendar">
+  //     <Calendar date={currentDate} />
+  //   </div>
 
-//   return <HomePage></HomePage>
-// }
+  //   </>
+  // );
+  return <ContactUs></ContactUs>;
+}
 
 export default App;

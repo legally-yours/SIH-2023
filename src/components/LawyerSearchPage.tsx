@@ -1,10 +1,8 @@
 // import React from 'react'
-import Navbar from './Navbar.tsx';
 import InfoCard from './InfoCard.tsx';
 import EmptyImage from "../assets/EmptyImage.png";
 import { Typography } from '@mui/material';
 import '../styles/LawyerSearchPage.css';
-import Footer from './Footer.tsx';
 
 interface Props {
   setCurrentPage: React.Dispatch<React.SetStateAction<string>>; // Add this prop
@@ -24,7 +22,6 @@ const LawyerSearchPage = ({setCurrentPage, current_page}: Props) => {
 
   return (
     <>
-    <Navbar setCurrentPage={setCurrentPage} ></Navbar>
     <div className="tile-set">
     {lawyers.map((data, index) => (
         <div className="tile">
@@ -37,7 +34,6 @@ const LawyerSearchPage = ({setCurrentPage, current_page}: Props) => {
     </div>
     ))}
     </div>
-    <Footer></Footer>
     </>
   )
 }
