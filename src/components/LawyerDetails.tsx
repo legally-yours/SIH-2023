@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import EmptyImage from "../assets/EmptyImage.png";
-
+import '../styles/LawyerDetails.css';
 interface BackButtonProps {
   onClick: () => void;
 }

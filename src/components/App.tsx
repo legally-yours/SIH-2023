@@ -56,12 +56,14 @@ function App() {
     return <>
       <Navbar setCurrentPage={setCurrentPage} />
       <LawyerDetails current_page={current_page} setCurrentPage={setCurrentPage} details={lawyerInfo}></LawyerDetails>
+      <Footer></Footer>
     </>
   } else {
     return (
       <>
       <Navbar setCurrentPage={setCurrentPage}></Navbar>
       <h1>{current_page}</h1>
+      <Footer></Footer>
       </>
     )
   }
