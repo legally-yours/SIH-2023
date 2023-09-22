@@ -1,5 +1,12 @@
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+
+declare global {
+  interface Window {
+    google: any; // Replace 'any' with the correct type if available
+  }
+}
+
 
 const TransalateButton = () => {
   useEffect(() => {
