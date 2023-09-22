@@ -1,8 +1,16 @@
 footer {
-    color: #ABD2FA;
-    background-color: #091540;
+    border-top: 1px solid #0A0A0A;
+    color: #0A0A0A;
+    background-color: #FEFEFE;
     display: flex;
     justify-content: space-between;
+}
+
+footer h3 {
+    color: #5A5A5A;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0.1em 0 0.5em 0;
 }
 
 p {
@@ -12,10 +20,8 @@ p {
 .left-footer {
     display: flex;
     font-size: 0.8em;
-    padding: 0;
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-    margin-left: 0.2em;
+    padding: 0 0.5em 0 0.5em;
+    margin: 2em 3em 2em 1em;
 }
 
 .left-footer-element {
@@ -24,8 +30,8 @@ p {
 }
 
 .right-footer {
-    width: 18vh;
-    height: 12vh;
+    width: 20vmin;
+    height: 15vmin;
     padding: 1em;
     margin-top: auto;
     margin-bottom: auto;
