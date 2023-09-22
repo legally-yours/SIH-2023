@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 // import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import EmptyImage from "../assets/EmptyImage.png";
-
+import '../styles/LawyerDetails.css';
 interface BackButtonProps {
   onClick: () => void;
 }
