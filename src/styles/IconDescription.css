@@ -1,19 +1,23 @@
 .icon-description {
+    margin-top: 90px;
     display: flex;
     justify-content: space-between;
-    background-color: #ABD2FA;
+    background-color: #84c8d6;
     padding: 1em;
+    /* margin: 100px 1em 1em 1em; */
+    /* border-radius: 2em; */
 }
 
 .home-heading h1 {
-    font-size: 8vh;
+    font-size: 8vw;
+    max-width: 60vw;
 }
 
 .home-heading h2 {
-    font-size: 2vh;
+    max-width: 60vw;
+    font-size: 2vw;
 }
 
 .home-title-image {
-    width: 40vh;
-    margin-right: 5vh;
+    width: 30vw;
 }

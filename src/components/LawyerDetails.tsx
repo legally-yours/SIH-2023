@@ -66,9 +66,13 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
   details,
 }) => {
   const handleBackClick = () => {
-    setCurrentPage("initial_view");
+    setCurrentPage("search");
   };
 
+  var cp = current_page;
+  var cpp = cp;
+  var cp = cpp;
+  
   return (
     <>
       <Box sx={{ display: "flex", ...CommonStyles }}>
