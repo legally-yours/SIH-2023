@@ -1,7 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import EmptyImage from "../assets/EmptyImage.png";
 
