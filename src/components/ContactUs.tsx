@@ -13,111 +13,120 @@ const CommonStyles = {
 
 const ContactUs = () => {
   return (
-    <Box
-      sx={{
-        ...CommonStyles,
-        p: 2,
-        flex: 1,
-        backgroundColor: "#FFFFFF",
-        marginTop: "12px",
-        borderTopRightRadius: "12px",
-        borderBottomRightRadius: "12px",
-        display: "flex",
-      }}
-    >
-      <Box sx={{ mb: 3, padding: "12px" }}>
-        <Typography
-          variant="h2"
-          sx={{
-            fontFamily: "Ubuntu",
-            color: "#023E8A",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          Contact Us
-        </Typography>
-        <Box
-          sx={{
-            borderRadius: "8px",
-            padding: "12px",
-            fontFamily: "Ubuntu",
-            fontSize: "1.2rem",
-            backgroundColor: "#FFFFFF",
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <Box
+    <>
+      <Box
+        sx={{
+          ...CommonStyles,
+          p: 2,
+          flex: 1,
+          backgroundColor: "#FFFFFF",
+          marginTop: "12px",
+          borderTopRightRadius: "12px",
+          borderBottomRightRadius: "12px",
+          display: "flex",
+        }}
+      >
+        <Box sx={{ mb: 3, padding: "12px" }}>
+          <Typography
+            variant="h2"
             sx={{
-              borderRight: "1px solid #ccc",
-              width: "50%",
+              fontFamily: "Ubuntu",
+              color: "#023E8A",
               display: "flex",
               justifyContent: "center",
-              flexDirection: "column",
             }}
           >
-            <Box>
-              <Typography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
-                Offices
-              </Typography>
-            </Box>
-            <Box>
-              <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold" }}>
-                VIT Chennai
-              </Typography>
-              <Typography variant="body1">
-                Vellore Institute of Technology (VIT) Chennai Campus
-                Vandalur-Kelambakkam Road, Rajan Nagar, Chennai, Tamil Nadu
-                600127 India
-              </Typography>
-            </Box>
-          </Box>
+            Contact Us
+          </Typography>
           <Box
             sx={{
-              width: "50%",
+              borderRadius: "8px",
+              padding: "12px",
+              fontFamily: "Ubuntu",
+              fontSize: "1.2rem",
+              backgroundColor: "#FFFFFF",
               display: "flex",
-              justifyContent: "center",
-              marginLeft: "20px",
-              flexDirection: "column",
+              justifyContent: "space-between",
             }}
           >
-            <Box>
-              <Typography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
-                Contact Info
-              </Typography>
+            <Box
+              sx={{
+                borderRight: "1px solid #ccc",
+                width: "50%",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Box>
+                <Typography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
+                  Offices
+                </Typography>
+              </Box>
+              <Box>
+                <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold" }}>
+                  VIT Chennai
+                </Typography>
+                <Typography variant="body1">
+                  Vellore Institute of Technology (VIT) Chennai Campus
+                  Vandalur-Kelambakkam Road, Rajan Nagar, Chennai, Tamil Nadu
+                  600127 India
+                </Typography>
+              </Box>
             </Box>
-            <Box>
-              <Typography
-                variant="body1"
-                sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
-              >
-                <i className="fa fa-phone"></i> <span>+91 98765 43210</span>
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
-              >
-                <i className="fa fa-phone"></i> <span>+91 77065 83212</span>
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
-              >
-                <i className="fa fa-phone"></i> <span>+91 94555 63213</span>
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
-              >
-                <i className="fa fa-envelope"></i>{" "}
-                <span>legallyYours@official.in</span>
-              </Typography>
+            <Box
+              sx={{
+                width: "50%",
+                display: "flex",
+                justifyContent: "center",
+                marginLeft: "20px",
+                flexDirection: "column",
+              }}
+            >
+              <Box>
+                <Typography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
+                  Contact Info
+                </Typography>
+              </Box>
+              <Box>
+                <Typography
+                  variant="body1"
+                  sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
+                >
+                  <i className="fa fa-phone"></i> <span>+91 98765 43210</span>
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
+                >
+                  <i className="fa fa-phone"></i> <span>+91 77065 83212</span>
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
+                >
+                  <i className="fa fa-phone"></i> <span>+91 94555 63213</span>
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
+                >
+                  <i className="fa fa-envelope"></i>{" "}
+                  <span>legallyYours@official.in</span>
+                </Typography>
+              </Box>
             </Box>
           </Box>
         </Box>
       </Box>
-    </Box>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=1OJVHhWig42FoiXy6Tw5r00PkkzJrtmQ&ehbc=2E312F&noprof=1"
+          width="82%"
+          height="480"
+        ></iframe>
+      </Box>
+    </>
   );
 };
 
