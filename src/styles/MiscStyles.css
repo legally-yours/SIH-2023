@@ -1,0 +1,52 @@
+.submit {
+    color: #023E8A;
+    background-color: #FFFFFF;
+    border: 0.5px soild #023E8A;
+    border-radius: 8px;
+    height: 40px;
+    width: 80px;
+    font-family: "Ubuntu";
+    font-size: 1.2rem;
+  }
+  
+  .submit:hover {
+    background-color: #023E8A;
+    color: #FFFFFF;
+  }
+  
+  .container {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container::before {
+    content: "";
+    background-image: url('../assets/pages-background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 30%;
+    width: 100%;
+  }
+  
+  
+  
