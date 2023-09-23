@@ -4,6 +4,7 @@ import EmptyImage from "../assets/EmptyImage.png";
 import { Typography } from "@mui/material";
 import "../styles/LawyerSearchPage.css";
 import Box from "@mui/material/Box";
+import Searchable from "./Searchable.tsx";
 
 interface Props {
   setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
@@ -46,21 +47,38 @@ const LawyerSearchPage = ({ setCurrentPage, current_page }: Props) => {
         sx={{
           ...CommonStyles,
           border: "1px solid #ccc",
-          maxHeight: "80%",
-          width: "30%",
+          height: "80%",
+          width: "35%",
           float: "left",
           marginTop: "7%",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "3%",
+            marginBottom: "6%", // Adjust margin bottom as needed
+          }}
+        >
           <Typography variant="h5">Search</Typography>
         </Box>
-        <Box></Box>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Box>
+          <Searchable categoryName="Name"></Searchable>
+          <Searchable categoryName="Location"></Searchable>
+          <Searchable categoryName="Rating"></Searchable>
+          <Searchable categoryName="Price"></Searchable>
+        </Box>
+        <Box
+          sx={{ display: "flex", justifyContent: "center", marginTop: "6%" }}
+        >
           <Typography variant="h5">Filters</Typography>
         </Box>
         <Box></Box>
       </Box>
+
       <Box sx={{ width: "70%", marginLeft: "30%" }}>
         <div className="tile-set">
           {lawyers.map((data, index) => (
