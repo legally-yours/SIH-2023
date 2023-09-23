@@ -15,6 +15,7 @@ footer h3 {
 
 p {
     margin: 0.3em;
+    font-size: 1rem;
 }
 
 .left-footer {
@@ -22,18 +23,19 @@ p {
     font-size: 0.8em;
     padding: 0 0.5em 0 0.5em;
     margin: 2em 3em 2em 1em;
+    gap: 50%;
 }
 
 .left-footer-element {
-    min-width: 10em;
+    min-width: 15.5em;
     flex-basis: 49%;
 }
 
 .right-footer {
     width: 20vmin;
     height: 15vmin;
-    padding: 1em;
+    padding: 0.5em;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 1em;
+    margin-right: 0.1em;
 }
