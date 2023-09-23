@@ -16,3 +16,11 @@
     justify-content: center;
     width: 100%;
 }
+
+.fixingbroken {
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    height: 125vh;
+}

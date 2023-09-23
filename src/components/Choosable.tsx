@@ -5,9 +5,10 @@ import Box from "@mui/material/Box";
 interface ChoosableProps {
   categoryName: string;
   choices: string[];
+  onClick(id: string): void;
 }
 
-const Choosable: React.FC<ChoosableProps> = ({ categoryName, choices }) => {
+const Choosable: React.FC<ChoosableProps> = ({ categoryName, choices, onClick }) => {
   return (
     <Box
       sx={{
@@ -29,13 +30,16 @@ const Choosable: React.FC<ChoosableProps> = ({ categoryName, choices }) => {
             key={index}
             variant="contained"
             color="primary"
+            onClick={() => {
+              onClick(choice);
+            }}
             sx={{
               color: "#03045E",
               background: "#FFFFFF",
               "&:hover": {
                 color: "#FFFFFF",
                 background: "#03045E",
-              },
+              }
             }}
           >
             {choice}
