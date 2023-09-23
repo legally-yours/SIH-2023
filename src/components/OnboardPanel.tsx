@@ -28,7 +28,7 @@ const OnboardPanel = ({setCurrentPage} : Props) => {
         borderBottomRightRadius: "12px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
       }}
     >
       <Box
@@ -38,7 +38,7 @@ const OnboardPanel = ({setCurrentPage} : Props) => {
           variant="h2"
           sx={{
             fontFamily: "Ubuntu",
-            color: "#03045E",
+            color: "#253C40",
             marginRight: "24px",
           }}
         >
