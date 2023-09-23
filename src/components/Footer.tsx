@@ -19,14 +19,16 @@ const Footer = () => {
           <div className="left-footer-element">
             <h3>Services</h3>
             <p>• Home</p>
-            <p>• Find lawyers</p>
+            <p>• Find lawyers</p>           
+           <TransalateButton></TransalateButton>
+
           </div>
           <div className="left-footer-element">
             <h3>Legal</h3>
             <p>• Terms and conditions</p>
             <p>• Privacy policy</p>
           </div>
-          <div className="left-footer-element"><TransalateButton></TransalateButton></div></div>
+        </div>
         <img className="right-footer" src={logoblack}></img>
       </footer>
     </>

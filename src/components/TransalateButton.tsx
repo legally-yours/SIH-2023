@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 declare global {
   interface Window {
-    google: any; // Replace 'any' with the correct type if available
+    google: any;
   }
 }
 
@@ -13,7 +13,6 @@ const TransalateButton = () => {
     script.async = true;
 
     script.onload = () => {
-      // Delay the execution of googleTranslateElementInit to ensure the 'google' object is available
       window.setTimeout(() => {
         function googleTranslateElementInit() {
           new window.google.translate.TranslateElement(
