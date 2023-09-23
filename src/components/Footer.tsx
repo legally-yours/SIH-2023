@@ -27,7 +27,6 @@ const Footer = () => {
             <p>• Privacy policy</p>
           </div>
           <div className="left-footer-element"><TransalateButton></TransalateButton></div></div>
-        </div>
         <img className="right-footer" src={logoblack}></img>
       </footer>
     </>
