@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import "../styles/LawyerSearchPage.css";
 import Box from "@mui/material/Box";
 import Searchable from "./Searchable.tsx";
+import Choosable from "./Choosable.tsx";
 
 interface Props {
   setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
@@ -50,7 +51,7 @@ const LawyerSearchPage = ({ setCurrentPage, current_page }: Props) => {
           height: "80%",
           width: "35%",
           float: "left",
-          marginTop: "7%",
+          marginTop: "1%",
           display: "flex",
           flexDirection: "column",
         }}
@@ -76,7 +77,32 @@ const LawyerSearchPage = ({ setCurrentPage, current_page }: Props) => {
         >
           <Typography variant="h5">Filters</Typography>
         </Box>
-        <Box></Box>
+        <Box>
+          <Choosable
+            categoryName={"Specialization"}
+            choices={[
+              "Lawyer",
+              "Arbiarator",
+              "Mediator",
+              "Notary",
+              "Document Writer",
+            ]}
+          ></Choosable>
+          <Choosable
+            categoryName={"Experience"}
+            choices={[
+              "2+ Years",
+              "5+ Years",
+              "8+ Years",
+              "10+ Years",
+              "15+ Years",
+            ]}
+          ></Choosable>
+          <Choosable
+            categoryName={"Accept Pro-bono cases"}
+            choices={["Yes", "No"]}
+          ></Choosable>
+        </Box>
       </Box>
 
       <Box sx={{ width: "70%", marginLeft: "30%" }}>

@@ -17,11 +17,9 @@ const Searchable: React.FC<SearchableProps> = ({ categoryName }) => {
   return (
     <Box
       sx={{
-        display: "grid",
-        gridTemplateColumns: "1fr 3fr 1fr",
-        gridGap: "10px",
+        display: "flex",
         alignItems: "center",
-        marginTop: "30px",
+        marginTop: "20px",
       }}
     >
       <Typography
@@ -37,9 +35,11 @@ const Searchable: React.FC<SearchableProps> = ({ categoryName }) => {
       <TextField
         variant="outlined"
         placeholder="Search..."
-        sx={{ height: "30px" }}
+        sx={{ height: "30px", marginRight: "50px", width: "300px" }}
       />
-      <ButtonComp buttonText="Search" onClick={() => {}}></ButtonComp>
+      <Box sx={{ marginTop: "20px" }}>
+        <ButtonComp buttonText="Search" onClick={() => {}}></ButtonComp>
+      </Box>
     </Box>
   );
 };
