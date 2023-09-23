@@ -65,29 +65,11 @@ export async function getLawyerData(query = {}) {
     );
     console.log('Connected to MongoDB');
     const lawyerData = await Lawyer.find(query);
-    const transformedData = lawyerData.map((doc) => ({
-      username: doc.username || '', // Add a default value if it's undefined
-      password: doc.password || '',
-      name: doc.name || '',
-      contact: doc.contact || 0, // Add a default value (e.g., 0) if it's undefined
-      profilepic: doc.profilepic || '',
-      specialisation: doc.specialisation || [],
-      location: doc.location || '',
-      experience: doc.experience || 0,
-      description: doc.description || '',
-      education: doc.education || '',
-      probono: doc.probono || 0,
-      price: doc.price || 0,
-      rating: doc.rating || 0,
-      numberratings: doc.numberratings || 0,
-      languages: doc.languages || '',
-    }));
-
     console.log('Lawyer data:');
-    console.log(transformedData);
+    console.log(lawyerData);
     await mongoose.disconnect();
     console.log('Disconnected from MongoDB');
-    return transformedData;
+    return lawyerData;
   } catch (error) {
     console.error('Error:', error);
   }

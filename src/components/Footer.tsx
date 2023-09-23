@@ -1,11 +1,13 @@
-//import React from 'react';
-import logoblack from "../assets/logo-black.png";
-import "../styles/Footer.css";
+// import React from 'react'
+import logoblack from '../assets/logo-black.png';
+import '../styles/Footer.css'
+import TransalateButton from './TransalateButton';
 
 
 const Footer = () => {
   return (
     <>
+
       <footer>
         <div className="left-footer">
           <div className="left-footer-element">
@@ -24,6 +26,7 @@ const Footer = () => {
             <p>• Terms and conditions</p>
             <p>• Privacy policy</p>
           </div>
+          <div className="left-footer-element"><TransalateButton></TransalateButton></div></div>
         </div>
         <img className="right-footer" src={logoblack}></img>
       </footer>
