@@ -10,7 +10,12 @@ import HomePage from "./HomePage";
 import Footer from "./Footer";
 import LawyerSearchPage from "./LawyerSearchPage";
 import LawyerDetails from "./LawyerDetails";
-// import Rohan from "./TransalateButton";
+import '../styles/App.css';
+import ContactUs from "./ContactUs";
+// import af from '../database/db_testing';
+import Login from './Login';
+import LawyerSignUp from "./LawyerSignUp";
+import ClientSignUp from "./ClientSignUp";
 
 function App() {
   const [current_page, setCurrentPage] = useState("home");
@@ -28,6 +33,7 @@ function App() {
   const lawyerInfo = {
     name: "Rohit Sinha",
     contact: "+91 935-395-8508",
+    probono: "10",
     specialization: "Criminal Defense",
     location: "Banagalore, Karnataka",
     experience: "10+ Years",
@@ -40,7 +46,8 @@ function App() {
     return (
       <>
         <Navbar setCurrentPage={setCurrentPage} />
-        <HomePage></HomePage>
+        <div className="nav-fixer"></div>
+        <HomePage setCurrentPage={setCurrentPage}></HomePage>
         <Footer></Footer>
       </>
     );
@@ -48,20 +55,56 @@ function App() {
     return (
       <>
         <Navbar setCurrentPage={setCurrentPage} />
+        <div className="nav-fixer"></div>
         <LawyerSearchPage setCurrentPage={setCurrentPage} current_page={current_page}></LawyerSearchPage>
         <Footer></Footer>
       </>
     );
   } else if (current_page == 'detailed_view') {
-    return <>
+    return (<>
       <Navbar setCurrentPage={setCurrentPage} />
+      <div className="nav-fixer"></div>
       <LawyerDetails current_page={current_page} setCurrentPage={setCurrentPage} details={lawyerInfo}></LawyerDetails>
       <Footer></Footer>
-    </>
-  } else {
+    </>)
+  } else if (current_page == 'contact us') {
+    return (<>
+      <Navbar setCurrentPage={setCurrentPage} />
+      <div className="nav-fixer"></div>
+      <ContactUs></ContactUs>
+      <Footer></Footer>
+    </>)
+  } else if (current_page == 'sign in') {
+    return (
+    <>
+      <Navbar setCurrentPage={setCurrentPage} />
+      <div className="nav-fixer"></div>
+      <Login></Login>
+      <Footer></Footer>
+</>)
+
+  } else if (current_page == 'lawyer-signup') {
+    return (
+      <>
+        <Navbar setCurrentPage={setCurrentPage} />
+        <div className="nav-fixer"></div>
+        <LawyerSignUp></LawyerSignUp>
+        <Footer></Footer>
+  </>)
+  } else if (current_page == 'client-signup') {
+    return (
+      <>
+        <Navbar setCurrentPage={setCurrentPage} />
+        <div className="nav-fixer"></div>
+        <ClientSignUp></ClientSignUp>
+        <Footer></Footer>
+  </>)
+  }
+  else {
     return (
       <>
       <Navbar setCurrentPage={setCurrentPage}></Navbar>
+      <div className="nav-fixer"></div>
       <h1>{current_page}</h1>
       <Footer></Footer>
       </>
