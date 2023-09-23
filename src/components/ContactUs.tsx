@@ -34,14 +34,21 @@ const ContactUs = () => {
               color: "#023E8A",
               display: "flex",
               justifyContent: "center",
+              fontWeight: "medium-bold",
+              lineHeight: 1.5, 
+              padding: 0/2, 
+              textDecoration: "underline",
+              textDecorationThickness: 2.5,
+              
+              
             }}
           >
             Contact Us
           </Typography>
           <Box
             sx={{
-              borderRadius: "8px",
-              padding: "12px",
+              borderRadius: "10px",
+              padding: "15px",
               fontFamily: "Ubuntu",
               fontSize: "1.2rem",
               backgroundColor: "#FFFFFF",
@@ -60,7 +67,7 @@ const ContactUs = () => {
             >
               <Box>
                 <Typography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
-                  Offices
+                  Offices:
                 </Typography>
               </Box>
               <Box>
@@ -84,14 +91,14 @@ const ContactUs = () => {
               }}
             >
               <Box>
-                <Typography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
-                  Contact Info
+                <Typography variant="h5" sx={{ mb: 2, fontWeight: "bold", mt:2, }}>
+                  Contact Info:
                 </Typography>
               </Box>
               <Box>
                 <Typography
                   variant="body1"
-                  sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
+                  sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem", mt: 2, }}
                 >
                   <i className="fa fa-phone"></i> <span>+91 98765 43210</span>
                 </Typography>
