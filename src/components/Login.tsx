@@ -6,7 +6,11 @@ import Grid from "@mui/material/Grid";
 import "../styles/MiscStyles.css";
 import "../styles/index.css";
 
-const Login: React.FC = () => {
+interface Props {
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Login = ( {setCurrentPage} : Props) => {
   const [formData, setFormData] = useState({
     email: "",
     phoneNumber: "",
@@ -23,7 +27,9 @@ const Login: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    setCurrentPage("home");
+  };
 
   return (
     <Box

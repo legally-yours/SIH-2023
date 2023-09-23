@@ -79,7 +79,7 @@ function App() {
     <>
       <Navbar setCurrentPage={setCurrentPage} />
       <div className="nav-fixer"></div>
-      <Login></Login>
+      <Login setCurrentPage={setCurrentPage}></Login>
       <Footer></Footer>
 </>)
 
