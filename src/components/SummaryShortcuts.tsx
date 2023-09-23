@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import "../styles/SummaryShortcuts.css";
 import ServiceIcon from "./ServiceIcon";
 const SummaryShortcuts = () => {
@@ -12,10 +13,15 @@ const SummaryShortcuts = () => {
       src="https://console.dialogflow.com/api-client/demo/embedded/70e4b56d-d946-4db8-ac0d-0287432d0787">
   </iframe></div>
 <div className="shortcuts"><h1>Our services</h1>
-<ServiceIcon></ServiceIcon>
-<ServiceIcon></ServiceIcon>
-<ServiceIcon></ServiceIcon>
-<ServiceIcon></ServiceIcon>
+<Box sx ={{display: "flex"}}>
+  <ServiceIcon catagory="lawyer"></ServiceIcon>
+  <ServiceIcon catagory="arbitrator"></ServiceIcon>
+</Box>
+<Box sx ={{display: "flex"}}>
+  <ServiceIcon catagory="mediator"></ServiceIcon>
+  <ServiceIcon catagory="documentWriter"></ServiceIcon>
+</Box>
+
 </div>
     </section>
   )

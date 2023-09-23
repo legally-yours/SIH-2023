@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-// import { Typography } from "@mui/material";
-// import Box from "@mui/material/Box";
-
-// const Choosable = () => {};
-
-=======
 import React from "react";
 import { Typography, Button } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -54,5 +47,4 @@ const Choosable: React.FC<ChoosableProps> = ({ categoryName, choices }) => {
 };
 
 
->>>>>>> f59de62c2f3876083df94978b8e8895acd6953cc
-// export default Choosable;
+export default Choosable;
