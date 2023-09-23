@@ -46,4 +46,5 @@ const Choosable: React.FC<ChoosableProps> = ({ categoryName, choices }) => {
   );
 };
 
-export default Choosable;
+
+// export default Choosable;
