@@ -14,8 +14,9 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.9",
     "@mui/material": "^5.14.10",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-
     "font-awesome": "^4.7.0",
     "mongoose": "^7.5.2",
     "nodemon": "^3.0.1",
