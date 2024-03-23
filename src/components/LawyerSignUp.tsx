@@ -23,14 +23,29 @@ const LawyerSignUp: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (event: FormEvent) => {
+  const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords do not match!");
       return;
     }
 
-    console.log("Form submitted:", formData);
+    try {
+      //console.log("Form Data:", formData); // Debugging statement to check formData
+
+      const response = await fetch("http://localhost:5000/api/lawyer/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      console.log("Form submitted:", data); // Debugging statement to check response data
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (

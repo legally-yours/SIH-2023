@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 95px;
 }
 
 .tile {
@@ -10,4 +9,18 @@
     width: 25%;
     padding: 0.5em;
     margin: 0.5em;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.fixingbroken {
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    height: 125vh;
 }

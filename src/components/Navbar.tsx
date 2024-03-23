@@ -17,7 +17,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import LogoBlack from "../assets/LogoBlack.png";
-import Rohan from "./TransalateButton";
+
 interface Props {
   window?: () => Window;
   setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
@@ -94,7 +94,7 @@ export default function DrawerAppBar(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 3, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -109,7 +109,6 @@ export default function DrawerAppBar(props: Props) {
               style={{ height: "85px", padding: "8px 0" }}
             />
           </Typography>
-          <Rohan></Rohan>
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
               <Button
@@ -118,6 +117,7 @@ export default function DrawerAppBar(props: Props) {
                   position: "relative",
                   color: "#000000",
                   backgroundColor: "#FFFFFF",
+                  paddingLeft: "100px",
                   fontSize: "1.2em",
                   "&:hover": {
                     backgroundColor: "#DDDDDD",
@@ -137,7 +137,7 @@ export default function DrawerAppBar(props: Props) {
             sx={{
               width: 30,
               height: 30,
-              marginLeft: "10px",
+              marginLeft: "100px",
             }}
           />
           {showProfileInfo && (

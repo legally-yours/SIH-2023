@@ -11,11 +11,11 @@ const CommonStyles = {
   position: "relative",
 };
 
-const handleOnClick = () => {
-  //Change Login Page
-};
+interface Props {
+  setCurrentPage : React.Dispatch<React.SetStateAction<string>>;
+}
 
-const OnboardPanel = () => {
+const OnboardPanel = ({setCurrentPage} : Props) => {
   return (
     <Box
       sx={{
@@ -28,7 +28,7 @@ const OnboardPanel = () => {
         borderBottomRightRadius: "12px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
       }}
     >
       <Box
@@ -38,7 +38,7 @@ const OnboardPanel = () => {
           variant="h2"
           sx={{
             fontFamily: "Ubuntu",
-            color: "#03045E",
+            color: "#253C40",
             marginRight: "24px",
           }}
         >
@@ -63,12 +63,12 @@ const OnboardPanel = () => {
           >
             <ButtonComp
               buttonText="Lawyers Click Here!"
-              onClick={handleOnClick}
+              onClick={() => {setCurrentPage('lawyer-signup')}}
             />
             <Box sx={{ width: "8px" }} />
             <ButtonComp
               buttonText="Client Click Here!"
-              onClick={handleOnClick}
+              onClick={() => {setCurrentPage('client-signup')}}
             />
           </Box>
         </Box>

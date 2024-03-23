@@ -7,6 +7,36 @@ import ButtonComp from "../components/ButtonComp";
 import Button from "@mui/material/Button";
 >>>>>>> b4d33729a85bb6c40d20de6d97e6ecaa07762b98
 import EmptyImage from "../assets/EmptyImage.png";
+<<<<<<< HEAD
+=======
+import Calendar from "./Calender";
+
+interface BackButtonProps {
+  onClick: () => void;
+}
+
+const BackButton: React.FC<BackButtonProps> = ({ onClick }) => (
+  <Button
+    variant="outlined"
+    color="primary"
+    size="small"
+    sx={{
+      position: "absolute",
+      top: "8px",
+      right: "8px",
+      color: "#023E8A",
+      borderColor: "#023E8A",
+      "&:hover": {
+        backgroundColor: "#023E8A",
+        color: "#FFFFFF",
+      },
+    }}
+    onClick={onClick}
+  >
+    Back
+  </Button>
+);
+>>>>>>> cf73a10a421111887b3126eccb513762a264419c
 
 interface LawyerDetailsProps {
   current_page: string;
@@ -14,6 +44,7 @@ interface LawyerDetailsProps {
   details: {
     name: string;
     contact: string;
+    probono: string;
     specialization: string;
     location: string;
     experience: string;
@@ -136,6 +167,13 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
           >
             Experience: {details.experience}
           </Typography>
+          <Typography
+            variant="body1"
+            sx={{ mb: 1, fontFamily: "Ubuntu", fontSize: "1.2rem" }}
+          >
+            Pro Bono Cases Done: {details.probono}
+          </Typography>
+          <Button sx={{'background-color': '#FFDFDF'}}>Book Pro Bono Case</Button>
         </Box>
       </Box>
       <Box
@@ -145,6 +183,7 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
           flex: 1,
           backgroundColor: "#FFFFFF",
           marginTop: "12px",
+          marginBottom: "12px",
           borderTopRightRadius: "12px",
           borderBottomRightRadius: "12px",
         }}
@@ -168,6 +207,21 @@ const LawyerDetails: React.FC<LawyerDetailsProps> = ({
             <Typography variant="body1">{details.description}</Typography>
           </Box>
         </Box>
+      </Box>
+      <Box sx={{
+          ...CommonStyles,
+          display: 'flex',
+          p: 2,
+          flex: 1,
+          backgroundColor: "#FFFFFF",
+          marginTop: "12px",
+          marginBottom: "12px",
+          borderTopRightRadius: "12px",
+          borderBottomRightRadius: "12px",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+        <Calendar date={new Date()}></Calendar>
       </Box>
     </>
   );
